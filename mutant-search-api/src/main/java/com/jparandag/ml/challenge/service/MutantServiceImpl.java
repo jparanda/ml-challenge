@@ -5,6 +5,7 @@ import com.jparandag.ml.challenge.model.Statistic;
 import com.jparandag.ml.challenge.repository.MutantRepository;
 import com.jparandag.ml.challenge.utils.MagnetoUtils;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
