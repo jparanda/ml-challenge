@@ -28,10 +28,10 @@ public class MutantResource {
         dnaArray = dnaRequest.getDna().toArray(dnaArray);
         boolean isMutantResult = mutantService.isMutant(dnaArray);
 
-        if (!isMutantResult) {
-            return new ResponseEntity<>(HttpStatus.FORBIDDEN);
+        if (isMutantResult) {
+            return new ResponseEntity<>(HttpStatus.OK);
         }
-        return new ResponseEntity<>(HttpStatus.OK);
+        return new ResponseEntity<>(HttpStatus.FORBIDDEN);
     }
 
     @GetMapping("/stats")
