@@ -36,3 +36,26 @@ HTTP 200 y la respuesta debe ser
  }`
  
 HTTP 204 cuando no hay contenido en la base de datos
+
+**Setup**
+
+**Es necesario tener instalado:**
+1. Maven 3.6.1
+2. Java 8
+3. Docker
+4. Docker Compose
+
+El repositorio en Git es https://github.com/jparanda/ml-challenge deberas hacer un fork a tu repo local para luego hacer el clone
+
+Para ejecutar la aplicacion dentro folder /ml-challenge/mutant-search-api :
+
+1. Ejecutar _mvn clean install_
+2. Ejecutar _docker build -t magneto-api-image ._
+3. Ejecutar _docker-compose up_
+
+El acceso al API es por el puerto 80 con lo cual podras ejecutar:
+
+http://localhost/magneto/api/v1/mutant
+
+http://localhost/magneto/api/v1/stats
+
