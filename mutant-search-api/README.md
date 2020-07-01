@@ -55,7 +55,7 @@ Para ejecutar la aplicacion dentro folder /ml-challenge/mutant-search-api :
 
 El acceso al API es por el puerto 80 con lo cual podras ejecutar:
 
-http://localhost/magneto/api/v1/mutant
+post -> http://localhost/magneto/api/v1/mutant
 
-http://localhost/magneto/api/v1/stats
+get  -> http://localhost/magneto/api/v1/stats
 
